@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — Controle de Gastos</title>
+<meta name="description" content="Política de privacidade do app Controle de Gastos: o que é guardado, onde fica, quem vê e como apagar.">
+<style>
+  :root {
+    --ink: #1e293b;
+    --muted: #64748b;
+    --line: #e2e8f0;
+    --green: #047857;
+    --bg: #ffffff;
+    --destaque: #f8fafc;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e2e8f0;
+      --muted: #94a3b8;
+      --line: #334155;
+      --green: #34d399;
+      --bg: #0f172a;
+      --destaque: #1e293b;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 32px 20px 64px;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  main { max-width: 680px; margin: 0 auto; }
+
+  h1 {
+    font-size: 27px;
+    line-height: 1.25;
+    margin: 0 0 6px;
+  }
+
+  .data {
+    color: var(--muted);
+    font-size: 15px;
+    margin: 0 0 32px;
+  }
+
+  h2 {
+    font-size: 19px;
+    margin: 36px 0 10px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+  }
+
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+
+  p, li { margin: 12px 0; }
+  ul { padding-left: 22px; }
+
+  strong { color: var(--ink); }
+
+  code {
+    background: var(--destaque);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 1px 5px;
+    font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+    font-size: 14px;
+    word-break: break-word;
+  }
+
+  .resumo {
+    background: var(--destaque);
+    border-left: 3px solid var(--green);
+    border-radius: 0 6px 6px 0;
+    padding: 14px 18px;
+    margin: 0 0 8px;
+  }
+
+  .resumo p { margin: 0; }
+  .resumo p + p { margin-top: 12px; }
+
+  a { color: var(--green); }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 15px;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Política de Privacidade — Controle de Gastos</h1>
+  <p class="data">Última atualização: 28 de setembro de 2026</p>
+
+  <h2>Resumo</h2>
+  <div class="resumo">
+    <p>O Controle de Gastos guarda <strong>os gastos que você lança</strong> numa conta
+    ligada ao seu <strong>login do Google</strong>. É isso que permite trocar de celular
+    e continuar vendo tudo.</p>
+
+    <p>Esses dados ficam num banco de dados na nuvem do Google (Firebase), no Brasil, e
+    <strong>só a sua conta consegue lê-los</strong>. O app não mostra anúncios, não usa
+    rastreamento e não vende nem repassa seus dados a ninguém.</p>
+
+    <p>Você pode <strong>excluir a conta e todos os dados</strong> a qualquer momento,
+    pelo próprio app.</p>
+  </div>
+
+  <h2>Que dados o app guarda</h2>
+
+  <p><strong>Da sua conta Google:</strong> ao entrar, o Google informa ao app o seu
+  <strong>e-mail</strong>, o seu <strong>nome</strong> e a <strong>foto do
+  perfil</strong>, além de um código interno que identifica a conta. O app usa o
+  e-mail para mostrar com qual conta você entrou e o código para separar os seus dados
+  dos de outras pessoas. O nome e a foto não são usados nem exibidos. O app
+  <strong>nunca recebe a sua senha</strong> do Google.</p>
+
+  <p><strong>Dos seus gastos:</strong> só o que você digita.</p>
+  <ul>
+    <li><strong>Gastos lançados:</strong> valor, data, categoria, forma de pagamento
+    (Pix/dinheiro, débito ou o cartão escolhido), número de parcelas e uma descrição
+    opcional.</li>
+    <li><strong>Cartões:</strong> o nome que você deu ao cartão e os dias de fechamento
+    e de vencimento da fatura. <strong>O app não pede nem guarda número de cartão,
+    senha, CVV ou dados bancários.</strong></li>
+    <li><strong>Gastos fixos:</strong> nome, valor, dia do vencimento, categoria, forma
+    de pagamento e em quais meses foram marcados como pagos.</li>
+  </ul>
+
+  <p><strong>Da sua conta no app:</strong> a data em que o teste grátis começou.</p>
+
+  <p>Nada disso é preenchido sozinho. O app não lê mensagens, extratos, notificações do
+  banco nem nada fora dele.</p>
+
+  <h2>Onde os dados ficam</h2>
+  <p>No <strong>Firebase</strong>, serviço de nuvem do Google, num servidor em
+  <strong>São Paulo</strong> (região <code>southamerica-east1</code>). A comunicação
+  entre o app e o servidor é criptografada.</p>
+
+  <p>As regras do banco só deixam cada conta ler e alterar os próprios dados. Nenhum
+  outro usuário do app consegue ver os seus gastos.</p>
+
+  <p>O app também mantém uma <strong>cópia no seu celular</strong>, dentro da pasta
+  privada dele, para funcionar sem internet. Quando a conexão volta, as mudanças feitas
+  sem rede são enviadas. Essa cópia não entra no backup do Google nem na transferência
+  para um celular novo: para ver seus dados em outro aparelho, basta entrar com a mesma
+  conta.</p>
+
+  <h2>Quem mais tem acesso</h2>
+  <ul>
+    <li><strong>O Google</strong>, como fornecedor do Firebase e do login, processa os
+    dados em nome do app para guardá-los e entregá-los a você. O uso que o Google faz
+    deles segue os termos do Firebase e a
+    <a href="https://policies.google.com/privacy?hl=pt-BR">política de privacidade do
+    Google</a>.</li>
+    <li><strong>O desenvolvedor</strong> tem acesso técnico ao banco pelo console do
+    Firebase. Esse acesso é usado só para manter o app funcionando, investigar um
+    problema que você relatar ou atender um pedido seu, como a exclusão da conta por
+    e-mail.</li>
+  </ul>
+
+  <p>Seus dados <strong>não são vendidos, alugados nem compartilhados</strong> com
+  anunciantes, bancos, birôs de crédito ou qualquer outra empresa.</p>
+
+  <h2>O plano pago</h2>
+  <p>Depois de 30 dias de teste grátis, o app pede uma assinatura mensal ou uma compra
+  única. <strong>O pagamento inteiro acontece dentro da Google Play.</strong> O app
+  nunca vê nem guarda o seu cartão, o seu CPF ou os seus dados de cobrança. Ele pergunta
+  à Play Store apenas se a sua conta tem o plano ativo e guarda essa resposta no
+  celular, para funcionar sem rede.</p>
+
+  <p>O que a Google registra sobre a compra (pedidos, cobrança, reembolso) segue a
+  política de privacidade dela. Para cancelar a assinatura ou pedir reembolso, use a
+  própria Play Store.</p>
+
+  <h2>Anúncios e análise de uso</h2>
+  <p>O app <strong>não exibe anúncios</strong> e <strong>não usa ferramentas de análise
+  de uso, rastreamento ou relatórios de falha</strong>.</p>
+
+  <h2>Permissões</h2>
+  <p>O Controle de Gastos <strong>não pede nenhuma permissão de acesso aos seus
+  dados</strong>: ele não acessa contatos, câmera, localização, microfone, fotos, SMS
+  ou arquivos. Na lista técnica de permissões do app aparecem estas entradas, todas do
+  tipo que o Android concede sem perguntar, porque não dão acesso a dados pessoais:</p>
+
+  <ul>
+    <li><code>INTERNET</code> e <code>ACCESS_NETWORK_STATE</code>: para falar com o
+    Firebase e com a Play Store, e saber quando há conexão.</li>
+    <li><code>com.android.vending.BILLING</code>: o direito de oferecer a compra dentro
+    do app.</li>
+    <li><code>USE_BIOMETRIC</code> e <code>USE_FINGERPRINT</code>: incluídas pela
+    biblioteca de login do Google, que pode usar a trava do próprio celular para
+    confirmar a sua conta. O app não lê nem guarda digital ou rosto; quem cuida disso é
+    o Android.</li>
+    <li><code>READ_GSERVICES</code>: incluída pelas bibliotecas do Google, para ler
+    configurações dos serviços do Google no aparelho.</li>
+    <li><code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>: criada pelo próprio app
+    para impedir que outros aplicativos falem com partes internas dele. É uma proteção,
+    e não um acesso.</li>
+  </ul>
+
+  <h2>Por quanto tempo os dados ficam guardados</h2>
+  <p>Enquanto a sua conta existir. Gastos, cartões e fixos que você apagar no app saem
+  do servidor na hora. Se você simplesmente parar de usar o app, os dados continuam
+  guardados até você excluir a conta.</p>
+
+  <h2>Como excluir a conta e os dados</h2>
+  <p>No app: <strong>Minha conta → Excluir minha conta</strong>. Isso apaga na hora
+  todos os gastos, cartões, gastos fixos e o registro da conta. Não dá para
+  desfazer.</p>
+
+  <p>Sem o app, peça por e-mail. O passo a passo e o que é apagado estão em
+  <a href="https://edgareverton.github.io/controle-de-gastos/excluir-conta/">Excluir
+  conta — Controle de Gastos</a>.</p>
+
+  <p>Excluir a conta <strong>não cancela a assinatura</strong>: isso é feito na Play
+  Store.</p>
+
+  <p>Desinstalar o app apaga a cópia do celular, mas <strong>não apaga a conta nem os
+  dados da nuvem</strong>.</p>
+
+  <h2>Seus direitos</h2>
+  <p>Pela Lei Geral de Proteção de Dados (LGPD), você pode pedir para confirmar se
+  temos dados seus, acessá-los, corrigi-los, recebê-los em cópia ou apagá-los. Quase
+  tudo isso você faz direto no app: todos os seus dados aparecem nas telas e podem ser
+  editados ou apagados ali. Para o restante, escreva para o contato abaixo.</p>
+
+  <h2>Crianças</h2>
+  <p>O app não é voltado a menores de 13 anos e não coleta dados sabendo que são de
+  crianças.</p>
+
+  <h2>Contato</h2>
+  <p>Dúvidas sobre esta política ou sobre os seus dados:
+  <a href="mailto:edgarevertonaraujo@gmail.com">edgarevertonaraujo@gmail.com</a></p>
+
+  <h2>Mudanças</h2>
+  <p>Se esta política mudar, a data no topo será atualizada e a nova versão publicada
+  neste mesmo endereço.</p>
+
+  <footer>
+    Controle de Gastos — app para ver os gastos do mês
+  </footer>
+
+</main>
+</body>
+</html>
