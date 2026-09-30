@@ -104,9 +104,10 @@
 
   <h2>Resumo</h2>
   <div class="resumo">
-    <p>O Controle de Gastos guarda <strong>os gastos que você lança</strong> numa conta
-    ligada ao seu <strong>login do Google</strong>. É isso que permite trocar de celular
-    e continuar vendo tudo.</p>
+    <p>O Controle de Gastos guarda <strong>o que você anota nele</strong> (gastos,
+    receitas, metas de economia e, se você ligar, o modo motorista e os investimentos)
+    numa conta ligada ao seu <strong>login do Google</strong>. É isso que permite trocar
+    de celular e continuar vendo tudo.</p>
 
     <p>Esses dados ficam num banco de dados na nuvem do Google (Firebase), no Brasil, e
     <strong>só a sua conta consegue lê-los</strong>. O app não mostra anúncios, não usa
@@ -132,17 +133,25 @@
   dos de outras pessoas. O nome e a foto não são usados nem exibidos. O app
   <strong>nunca recebe a sua senha</strong> do Google.</p>
 
-  <p><strong>Dos seus gastos:</strong> o que você digita e, se você ligar as compras
-  automáticas, as compras lidas das notificações do banco (veja abaixo).</p>
+  <p><strong>Dos seus gastos e receitas:</strong> o que você digita e, se você ligar as
+  compras automáticas, as compras lidas das notificações do banco (veja abaixo).</p>
   <ul>
     <li><strong>Gastos lançados:</strong> valor, data, categoria, forma de pagamento
     (Pix/dinheiro, débito ou o cartão escolhido), número de parcelas e uma descrição
     opcional.</li>
+    <li><strong>Receitas lançadas:</strong> valor, data, categoria (salário, extra…) e
+    uma descrição opcional.</li>
     <li><strong>Cartões:</strong> o nome que você deu ao cartão e os dias de fechamento
     e de vencimento da fatura. <strong>O app não pede nem guarda número de cartão,
     senha, CVV ou dados bancários.</strong></li>
-    <li><strong>Gastos fixos:</strong> nome, valor, dia do vencimento, categoria, forma
-    de pagamento e em quais meses foram marcados como pagos.</li>
+    <li><strong>Gastos fixos e receitas fixas:</strong> nome, valor, dia do vencimento
+    (ou do recebimento), categoria, forma de pagamento e em quais meses foram marcados
+    como pagos ou recebidos.</li>
+    <li><strong>Categorias criadas por você</strong> e o <strong>limite por mês</strong>
+    que você definir para cada categoria.</li>
+    <li><strong>Metas de economia:</strong> o nome da meta, quanto juntar, o prazo, se
+    você informar, e cada vez que você guardou ou retirou dinheiro dela (data e
+    valor).</li>
   </ul>
 
   <p><strong>Do modo motorista</strong> (só se você ligar em Minha conta): uma área
@@ -160,6 +169,20 @@
     itens de manutenção (nome, de quantos em quantos km e quantos km já foram
     rodados).</li>
   </ul>
+
+  <p><strong>Dos investimentos</strong> (só se você ligar em Minha conta): uma área
+  separada para anotar a sua carteira. Guarda o que você digita nela:</p>
+  <ul>
+    <li><strong>Ativos:</strong> o código ou nome que você deu (PETR4, CDB Banco X…), o
+    tipo (ação, fundo imobiliário, renda fixa, previdência…) e, se você informar, o
+    preço de hoje.</li>
+    <li><strong>Compras e vendas:</strong> data, hora, quantidade, preço por unidade e
+    taxas de cada operação.</li>
+    <li><strong>Proventos:</strong> tipo (dividendo, juros sobre capital próprio,
+    rendimento), data e valor.</li>
+  </ul>
+  <p>O app <strong>não se conecta à sua corretora, ao seu banco nem à B3</strong> e não
+  busca cotações: tudo o que aparece nessa área foi digitado por você.</p>
 
   <p><strong>Da sua conta no app:</strong> a data em que o teste grátis começou.</p>
 
@@ -196,11 +219,35 @@
   tocar em Parar, <strong>só o total de km e de horas</strong> vai para a sua conta.
   Nenhuma coordenada, endereço ou trajeto sai do aparelho.</p>
 
-  <h2>Relatório de renda</h2>
-  <p>No modo motorista, o app pode gerar um relatório em PDF com os seus ganhos e gastos
-  do mês ou dos últimos 3 meses. O arquivo é montado <strong>no celular</strong>, com o
-  seu nome e e-mail da conta Google, e só sai dele se você escolher para quem enviar
-  (WhatsApp, e-mail, Drive…).</p>
+  <h2>Relatórios e planilhas</h2>
+  <p>O app pode gerar arquivos a partir dos seus dados, sempre que você pedir:</p>
+  <ul>
+    <li>no modo motorista, um <strong>relatório de renda em PDF</strong> do mês ou dos
+    últimos 3 meses, com o seu nome e e-mail da conta Google;</li>
+    <li>na busca, uma <strong>planilha</strong> com os lançamentos que a busca achou;</li>
+    <li>nos investimentos, a <strong>planilha do imposto de renda</strong> do ano, com as
+    operações, os proventos e a posição em 31/12.</li>
+  </ul>
+  <p>Os arquivos são montados <strong>no celular</strong> e só saem dele se você escolher
+  para quem enviar (WhatsApp, e-mail, Drive…).</p>
+
+  <h2>Lembrete de vencimento</h2>
+  <p>O app pode avisar, por notificação no celular, um dia antes e no dia em que vence um
+  gasto fixo ou a fatura de um cartão. Para montar o aviso, ele lê os seus fixos e
+  cartões da sua conta, uma vez por dia. <strong>Nada novo é enviado ou guardado</strong>
+  por causa do lembrete. Dá para desligar em Minha conta ou nas configurações de
+  notificação do Android.</p>
+
+  <h2>Bloqueio ao abrir e widget</h2>
+  <p>O <strong>bloqueio ao abrir</strong> vem desligado. Ligado em Minha conta, ele pede a
+  digital, o rosto ou o PIN do celular para abrir o app. <strong>Quem confere é o
+  Android:</strong> o app não vê, não recebe e não guarda a sua digital, o seu rosto ou o
+  seu PIN. Ele só guarda, no celular, se o bloqueio está ligado.</p>
+
+  <p>O <strong>widget</strong>, se você colocar na tela inicial do Android, mostra o total
+  de gastos do mês. Esse valor fica guardado no celular para o widget desenhar. Com o
+  bloqueio ligado, ao sair da conta ou sem acesso ao app, o widget <strong>não mostra o
+  valor</strong>.</p>
 
   <h2>Onde os dados ficam</h2>
   <p>No <strong>Firebase</strong>, serviço de nuvem do Google, num servidor em
@@ -260,8 +307,11 @@
     <li><code>FOREGROUND_SERVICE</code> e <code>FOREGROUND_SERVICE_LOCATION</code>: para
     a contagem de km continuar com o app fechado, sempre com a notificação fixa na
     tela.</li>
-    <li><code>POST_NOTIFICATIONS</code>: para mostrar essa notificação da jornada, com os
-    km e os botões Pausar e Parar.</li>
+    <li><code>POST_NOTIFICATIONS</code>: para o lembrete de vencimento e para a
+    notificação da jornada do modo motorista, com os km e os botões Pausar e Parar.</li>
+    <li><code>USE_BIOMETRIC</code> e <code>USE_FINGERPRINT</code>: para o bloqueio ao
+    abrir, que pede ao Android a digital, o rosto ou o PIN. O app não lê nem guarda
+    digital ou rosto; quem cuida disso é o Android.</li>
   </ul>
 
   <p>Na lista técnica aparecem também estas entradas, do tipo que o Android concede sem
@@ -272,10 +322,9 @@
     Firebase e com a Play Store, e saber quando há conexão.</li>
     <li><code>com.android.vending.BILLING</code>: o direito de oferecer a compra dentro
     do app.</li>
-    <li><code>USE_BIOMETRIC</code> e <code>USE_FINGERPRINT</code>: incluídas pela
-    biblioteca de login do Google, que pode usar a trava do próprio celular para
-    confirmar a sua conta. O app não lê nem guarda digital ou rosto; quem cuida disso é
-    o Android.</li>
+    <li><code>RECEIVE_BOOT_COMPLETED</code> e <code>WAKE_LOCK</code>: para o lembrete
+    de vencimento e o widget continuarem funcionando depois que o celular é
+    reiniciado.</li>
     <li><code>READ_GSERVICES</code>: incluída pelas bibliotecas do Google, para ler
     configurações dos serviços do Google no aparelho.</li>
     <li><code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>: criada pelo próprio app
@@ -284,16 +333,18 @@
   </ul>
 
   <h2>Por quanto tempo os dados ficam guardados</h2>
-  <p>Enquanto a sua conta existir. Gastos, cartões, fixos e lançamentos do modo
-  motorista que você apagar no app saem do servidor na hora. Desligar o modo motorista
-  só esconde o botão: os dados dele continuam guardados até você apagá-los ou excluir a
-  conta. Se você simplesmente parar de usar o app, os dados continuam
+  <p>Enquanto a sua conta existir. O que você apagar no app (gastos, receitas, cartões,
+  fixos, categorias, metas, lançamentos do modo motorista, ativos e operações dos
+  investimentos) sai do servidor na hora. Desligar o modo motorista ou os
+  investimentos só esconde o botão: os dados continuam guardados até você apagá-los ou
+  excluir a conta. Se você simplesmente parar de usar o app, os dados continuam
   guardados até você excluir a conta.</p>
 
   <h2>Como excluir a conta e os dados</h2>
   <p>No app: <strong>Minha conta → Excluir minha conta</strong>. Isso apaga na hora
-  todos os gastos, cartões, gastos fixos, os dados do modo motorista e o registro da
-  conta. Não dá para desfazer.</p>
+  todos os gastos e receitas, cartões, gastos e receitas fixos, categorias criadas,
+  limites, metas, os dados do modo motorista, os investimentos e o registro da conta.
+  Não dá para desfazer.</p>
 
   <p>Sem o app, peça por e-mail. O passo a passo e o que é apagado estão em
   <a href="https://edgareverton.github.io/controle-de-gastos/excluir-conta/">Excluir
