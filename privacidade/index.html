@@ -100,7 +100,7 @@
 <main>
 
   <h1>Política de Privacidade — Controle de Gastos</h1>
-  <p class="data">Última atualização: 28 de setembro de 2026</p>
+  <p class="data">Última atualização: 30 de setembro de 2026</p>
 
   <h2>Resumo</h2>
   <div class="resumo">
@@ -111,6 +111,13 @@
     <p>Esses dados ficam num banco de dados na nuvem do Google (Firebase), no Brasil, e
     <strong>só a sua conta consegue lê-los</strong>. O app não mostra anúncios, não usa
     rastreamento e não vende nem repassa seus dados a ninguém.</p>
+
+    <p>Duas funções são <strong>opcionais e desligadas até você ligar</strong>: as
+    <strong>compras automáticas</strong>, que leem a notificação de compra do seu banco
+    para lançar o gasto, e o <strong>"Começar a rodar"</strong> do modo motorista, que
+    usa a localização para contar os km. Nos dois casos, o texto da notificação e a sua
+    localização <strong>ficam no celular</strong>: só o gasto lançado e o total de km vão
+    para a sua conta.</p>
 
     <p>Você pode <strong>excluir a conta e todos os dados</strong> a qualquer momento,
     pelo próprio app.</p>
@@ -125,7 +132,8 @@
   dos de outras pessoas. O nome e a foto não são usados nem exibidos. O app
   <strong>nunca recebe a sua senha</strong> do Google.</p>
 
-  <p><strong>Dos seus gastos:</strong> só o que você digita.</p>
+  <p><strong>Dos seus gastos:</strong> o que você digita e, se você ligar as compras
+  automáticas, as compras lidas das notificações do banco (veja abaixo).</p>
   <ul>
     <li><strong>Gastos lançados:</strong> valor, data, categoria, forma de pagamento
     (Pix/dinheiro, débito ou o cartão escolhido), número de parcelas e uma descrição
@@ -137,10 +145,62 @@
     de pagamento e em quais meses foram marcados como pagos.</li>
   </ul>
 
+  <p><strong>Do modo motorista</strong> (só se você ligar em Minha conta): uma área
+  separada para quem roda de Uber, 99 ou outro app de corrida. Guarda o que você lança
+  ou anota nela:</p>
+  <ul>
+    <li><strong>Ganhos:</strong> valor, data, de qual app de corrida veio e uma
+    descrição opcional.</li>
+    <li><strong>Gastos do carro:</strong> valor, data, tipo (combustível, manutenção,
+    aluguel…), os litros do abastecimento, se você informar, e uma descrição
+    opcional.</li>
+    <li><strong>Jornada de cada dia:</strong> o total de km rodados e de horas
+    trabalhadas. <strong>Nunca o trajeto nem os lugares por onde você passou.</strong></li>
+    <li><strong>Ajustes:</strong> a meta de lucro do dia, o desgaste do carro por km e os
+    itens de manutenção (nome, de quantos em quantos km e quantos km já foram
+    rodados).</li>
+  </ul>
+
   <p><strong>Da sua conta no app:</strong> a data em que o teste grátis começou.</p>
 
-  <p>Nada disso é preenchido sozinho. O app não lê mensagens, extratos, notificações do
-  banco nem nada fora dele.</p>
+  <p>O app não lê SMS, e-mails, extratos nem o conteúdo de outros aplicativos. A única
+  exceção são as notificações de compra do banco, e só se você ligar essa função.</p>
+
+  <h2>Compras automáticas (leitura das notificações do banco)</h2>
+  <p>Vem <strong>desligada</strong>. Para ligar, você toca em Ligar em <strong>Minha
+  conta</strong> e dá ao app o <strong>acesso às notificações</strong> nas configurações
+  do Android. Você pode desligar a qualquer momento, no app ou nas configurações.</p>
+
+  <p>Com ela ligada, o Android entrega ao app as notificações que chegam no celular. O
+  app <strong>ignora todas as que não são dos bancos suportados</strong> (hoje, Nubank e
+  Inter) e, dessas, todas que não são uma compra aprovada no cartão de crédito: Pix,
+  débito, compra negada, estorno e propaganda ficam de fora.</p>
+
+  <p>Quando é uma compra, o app lança um gasto com o <strong>valor</strong>, o
+  <strong>nome da loja</strong> como descrição, o <strong>número de parcelas</strong> e o
+  cartão cadastrado com o nome do banco. Esse gasto vai para a sua conta como qualquer
+  outro, e você pode editar ou apagar. <strong>O texto da notificação não é enviado nem
+  guardado:</strong> o celular guarda só um código (resumo criptográfico) de cada
+  notificação já lançada, para não lançar a mesma compra duas vezes, e apaga esse
+  código depois de 30 dias.</p>
+
+  <h2>Localização (modo motorista)</h2>
+  <p>Usada só pelo botão <strong>"Começar a rodar"</strong>, que conta os km pelo GPS
+  enquanto você trabalha. O app pede a permissão de localização na primeira vez que você
+  toca nele, e só a usa <strong>entre o Começar e o Parar</strong>, com uma notificação
+  fixa na tela o tempo todo mostrando que a contagem está ligada. Ele não usa a
+  localização em segundo plano fora disso nem pede a permissão de localização "o tempo
+  todo".</p>
+
+  <p>Os pontos do GPS são somados <strong>no próprio celular</strong> e descartados. Ao
+  tocar em Parar, <strong>só o total de km e de horas</strong> vai para a sua conta.
+  Nenhuma coordenada, endereço ou trajeto sai do aparelho.</p>
+
+  <h2>Relatório de renda</h2>
+  <p>No modo motorista, o app pode gerar um relatório em PDF com os seus ganhos e gastos
+  do mês ou dos últimos 3 meses. O arquivo é montado <strong>no celular</strong>, com o
+  seu nome e e-mail da conta Google, e só sai dele se você escolher para quem enviar
+  (WhatsApp, e-mail, Drive…).</p>
 
   <h2>Onde os dados ficam</h2>
   <p>No <strong>Firebase</strong>, serviço de nuvem do Google, num servidor em
@@ -188,10 +248,24 @@
   de uso, rastreamento ou relatórios de falha</strong>.</p>
 
   <h2>Permissões</h2>
-  <p>O Controle de Gastos <strong>não pede nenhuma permissão de acesso aos seus
-  dados</strong>: ele não acessa contatos, câmera, localização, microfone, fotos, SMS
-  ou arquivos. Na lista técnica de permissões do app aparecem estas entradas, todas do
-  tipo que o Android concede sem perguntar, porque não dão acesso a dados pessoais:</p>
+  <p>O app <strong>não acessa</strong> contatos, câmera, microfone, fotos, SMS ou
+  arquivos. Ele só pede o que as funções opcionais precisam, e só quando você as usa:</p>
+
+  <ul>
+    <li><strong>Acesso às notificações</strong>: para as compras automáticas. É dado por
+    você nas configurações do Android e pode ser retirado ali a qualquer momento.</li>
+    <li><code>ACCESS_FINE_LOCATION</code> e <code>ACCESS_COARSE_LOCATION</code>
+    (localização): para o "Começar a rodar" do modo motorista, só enquanto a contagem está
+    ligada.</li>
+    <li><code>FOREGROUND_SERVICE</code> e <code>FOREGROUND_SERVICE_LOCATION</code>: para
+    a contagem de km continuar com o app fechado, sempre com a notificação fixa na
+    tela.</li>
+    <li><code>POST_NOTIFICATIONS</code>: para mostrar essa notificação da jornada, com os
+    km e os botões Pausar e Parar.</li>
+  </ul>
+
+  <p>Na lista técnica aparecem também estas entradas, do tipo que o Android concede sem
+  perguntar, porque não dão acesso a dados pessoais:</p>
 
   <ul>
     <li><code>INTERNET</code> e <code>ACCESS_NETWORK_STATE</code>: para falar com o
@@ -210,14 +284,16 @@
   </ul>
 
   <h2>Por quanto tempo os dados ficam guardados</h2>
-  <p>Enquanto a sua conta existir. Gastos, cartões e fixos que você apagar no app saem
-  do servidor na hora. Se você simplesmente parar de usar o app, os dados continuam
+  <p>Enquanto a sua conta existir. Gastos, cartões, fixos e lançamentos do modo
+  motorista que você apagar no app saem do servidor na hora. Desligar o modo motorista
+  só esconde o botão: os dados dele continuam guardados até você apagá-los ou excluir a
+  conta. Se você simplesmente parar de usar o app, os dados continuam
   guardados até você excluir a conta.</p>
 
   <h2>Como excluir a conta e os dados</h2>
   <p>No app: <strong>Minha conta → Excluir minha conta</strong>. Isso apaga na hora
-  todos os gastos, cartões, gastos fixos e o registro da conta. Não dá para
-  desfazer.</p>
+  todos os gastos, cartões, gastos fixos, os dados do modo motorista e o registro da
+  conta. Não dá para desfazer.</p>
 
   <p>Sem o app, peça por e-mail. O passo a passo e o que é apagado estão em
   <a href="https://edgareverton.github.io/controle-de-gastos/excluir-conta/">Excluir
