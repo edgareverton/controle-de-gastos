@@ -100,7 +100,7 @@
 <main>
 
   <h1>Política de Privacidade — Controle de Gastos</h1>
-  <p class="data">Última atualização: 5 de outubro de 2026</p>
+  <p class="data">Última atualização: 31 de outubro de 2026</p>
 
   <h2>Resumo</h2>
   <div class="resumo">
@@ -115,13 +115,14 @@
 
     <p>Algumas funções são <strong>opcionais e desligadas até você ligar</strong>: as
     <strong>compras automáticas</strong>, que leem a notificação de compra do seu banco
-    para lançar o gasto; o <strong>"Começar a rodar"</strong> do modo motorista, que
-    usa a localização para contar os km; o <strong>"Vale a pena?" automático</strong>,
-    que lê na tela a oferta de corrida dos apps de motorista (Uber, 99 e inDrive) para
+    para lançar o gasto; o <strong>taxímetro</strong> do modo motorista, que usa a
+    localização para contar os km da corrida particular; o <strong>"Vale a pena?"
+    automático</strong>, que lê na tela a oferta de corrida dos apps de motorista (Uber e 99) para
     dizer se ela compensa; e a <strong>câmera da viagem</strong>, que grava as corridas
     como uma câmera de segurança. O texto da notificação, a sua localização, as ofertas
-    lidas e os vídeos <strong>ficam no celular</strong>: só o gasto lançado e o total de
-    km vão para a sua conta.</p>
+    lidas e os vídeos <strong>ficam no celular</strong>: só o gasto lançado, os ganhos,
+    km e horas que você anota, e as regras, áreas de risco e mensagens que você escreve
+    vão para a sua conta.</p>
 
     <p>Você pode <strong>excluir a conta e todos os dados</strong> a qualquer momento,
     pelo próprio app.</p>
@@ -226,16 +227,16 @@
   código depois de 30 dias.</p>
 
   <h2>Localização (modo motorista)</h2>
-  <p>Usada só pelo botão <strong>"Começar a rodar"</strong>, que conta os km pelo GPS
-  enquanto você trabalha. O app pede a permissão de localização na primeira vez que você
-  toca nele, e só a usa <strong>entre o Começar e o Parar</strong>, com uma notificação
-  fixa na tela o tempo todo mostrando que a contagem está ligada. Ele não usa a
-  localização em segundo plano fora disso nem pede a permissão de localização "o tempo
-  todo".</p>
+  <p>Usada só por duas funções do modo motorista: o <strong>taxímetro</strong>, que
+  conta os km pelo GPS durante a corrida particular, e o <strong>"Para onde?"</strong>
+  (abaixo). O app pede a permissão de localização na primeira vez que você usa uma
+  delas, e só a usa <strong>com a tela delas aberta</strong>. Ele não usa a localização
+  em segundo plano nem pede a permissão de localização "o tempo todo".</p>
 
-  <p>Os pontos do GPS são somados <strong>no próprio celular</strong> e descartados. Ao
-  tocar em Parar, <strong>só o total de km e de horas</strong> vai para a sua conta.
-  Nenhuma coordenada, endereço ou trajeto sai do aparelho.</p>
+  <p>Os pontos do GPS são somados <strong>no próprio celular</strong> e descartados. Do
+  taxímetro, <strong>só o ganho e os km da corrida que você lançar</strong> vão para a
+  sua conta. Nenhuma coordenada, endereço ou trajeto sai do aparelho, fora o que o
+  "Para onde?" manda ao Google Maps, explicado abaixo.</p>
 
   <h3>"Para onde?" (busca do destino no mapa)</h3>
   <p>Na calculadora "Vale a pena?" e no taxímetro, você pode digitar o lugar de destino
@@ -262,9 +263,9 @@
   configurações de <strong>acessibilidade</strong> do Android. Você pode desligar a
   qualquer momento ali.</p>
 
-  <p>Com ele ligado, quando o <strong>app de motorista</strong> da Uber, da 99 ou do
-  inDrive mostra uma oferta de corrida, o Controle de Gastos lê os textos da tela
-  <strong>só desses três apps</strong> para achar: o valor, os km e os minutos até o
+  <p>Com ele ligado, quando o <strong>app de motorista</strong> da Uber ou da 99 mostra
+  uma oferta de corrida, o Controle de Gastos lê os textos da tela
+  <strong>só desses dois apps</strong> para achar: o valor, os km e os minutos até o
   passageiro e da viagem, a nota do passageiro e quantas corridas ele já fez, e se a
   oferta fala em parada ou em passageiro novo. Os endereços da tela são conferidos
   com as <strong>áreas de risco</strong> que você cadastrar, no próprio celular. Com
@@ -285,12 +286,16 @@
   você pode apagar todo o histórico pela tela de ofertas.</p>
 
   <p><strong>Regras, áreas de risco e voz:</strong> as regras do cartão, as áreas de
-  risco que você digitar e o jeito do cartão ficam no celular. O aviso por voz, se
-  ligado, usa a voz do próprio Android.</p>
+  risco que você digitar e o jeito do cartão ficam no celular e têm uma
+  <strong>cópia na sua conta</strong>, para voltarem quando você trocar de celular ou
+  restaurar o aparelho. A comparação dos endereços da oferta com as áreas de risco é
+  feita no celular: os endereços não vão para a sua conta. O aviso por voz, se ligado,
+  usa a voz do próprio Android.</p>
 
   <h2>Mensagens prontas</h2>
   <p>Frases para o passageiro ("Cheguei!", "Vou atrasar 5 minutos") que você escreve ou
-  muda no app. Elas ficam <strong>no celular</strong>. Um toque copia a frase para a área
+  muda no app. Elas ficam no celular e têm uma <strong>cópia na sua conta</strong>, para
+  voltarem quando você trocar de celular. Um toque copia a frase para a área
   de transferência do Android, para você colar no chat do app de corrida; o Controle de
   Gastos não escreve nem lê nada no chat de outros apps.</p>
 
@@ -400,14 +405,9 @@
     <li><strong>Acesso às notificações</strong>: para as compras automáticas. É dado por
     você nas configurações do Android e pode ser retirado ali a qualquer momento.</li>
     <li><code>ACCESS_FINE_LOCATION</code> e <code>ACCESS_COARSE_LOCATION</code>
-    (localização): para o "Começar a rodar" do modo motorista, só enquanto a contagem está
-    ligada.</li>
-    <li><code>FOREGROUND_SERVICE</code> e <code>FOREGROUND_SERVICE_LOCATION</code>: para
-    a contagem de km continuar com o app fechado, sempre com a notificação fixa na
-    tela.</li>
-    <li><code>POST_NOTIFICATIONS</code>: para o lembrete de vencimento, para a
-    notificação da jornada do modo motorista, com os km e os botões Pausar e Parar, e
-    para a notificação "Gravando a viagem" da câmera.</li>
+    (localização): para o taxímetro e o "Para onde?" do modo motorista, só com a tela
+    deles aberta.</li>
+    <li><code>POST_NOTIFICATIONS</code>: para o lembrete de vencimento e para a notificação "Gravando a viagem" da câmera.</li>
     <li><strong>Serviço de acessibilidade</strong>: para o "Vale a pena?" automático ler
     a oferta de corrida dos apps de motorista e mostrar o cartão e o botão flutuante. É
     ligado por você nas configurações de acessibilidade do Android e pode ser desligado
@@ -457,8 +457,8 @@
   todos os gastos e receitas, cartões, gastos e receitas fixos, categorias criadas,
   limites, metas, os dados do modo motorista, os investimentos e o registro da conta, e
   também o histórico de ofertas guardado no celular. Não dá para desfazer. Os vídeos da
-  câmera da viagem e as mensagens prontas ficam no celular até você apagá-los no app ou
-  desinstalá-lo.</p>
+  câmera da viagem e a cópia das mensagens prontas que fica no celular continuam nele até
+  você apagá-los no app ou desinstalá-lo.</p>
 
   <p>Sem o app, peça por e-mail. O passo a passo e o que é apagado estão em
   <a href="https://edgareverton.github.io/controle-de-gastos/excluir-conta/">Excluir
