@@ -100,7 +100,7 @@
 <main>
 
   <h1>Política de Privacidade — Controle de Gastos</h1>
-  <p class="data">Última atualização: 31 de outubro de 2026</p>
+  <p class="data">Última atualização: 14 de novembro de 2026</p>
 
   <h2>Resumo</h2>
   <div class="resumo">
@@ -143,6 +143,11 @@
     <li><strong>Gastos lançados:</strong> valor, data, categoria, forma de pagamento
     (Pix/dinheiro, débito ou o cartão escolhido), número de parcelas e uma descrição
     opcional.</li>
+    <li><strong>Foto do comprovante</strong> (opcional): se você tirar uma foto ou
+    escolher uma da galeria ao lançar um gasto, ela fica <strong>só no celular</strong>,
+    na pasta privada do app. Não vai para a sua conta nem para a internet, não entra no
+    backup do Google nem na transferência para um celular novo, e se perde ao trocar de
+    aparelho ou desinstalar o app.</li>
     <li><strong>Receitas lançadas:</strong> valor, data, categoria (salário, extra…) e
     uma descrição opcional.</li>
     <li><strong>Cartões:</strong> o nome que você deu ao cartão e os dias de fechamento
@@ -165,8 +170,8 @@
     <li><strong>Ganhos:</strong> valor, data, de qual app de corrida veio e uma
     descrição opcional.</li>
     <li><strong>Gastos do carro:</strong> valor, data, tipo (combustível, manutenção,
-    aluguel…), os litros do abastecimento, se você informar, e uma descrição
-    opcional.</li>
+    aluguel…), os litros e o nome do posto do abastecimento, se você informar, e uma
+    descrição opcional.</li>
     <li><strong>Jornada de cada dia:</strong> o total de km rodados e de horas
     trabalhadas. <strong>Nunca o trajeto nem os lugares por onde você passou.</strong></li>
     <li><strong>Ajustes:</strong> as metas de lucro (do dia, da semana e do mês), o
@@ -197,7 +202,22 @@
   <p>O app <strong>não se conecta à sua corretora, ao seu banco nem à B3</strong> e não
   busca cotações: tudo o que aparece nessa área foi digitado por você.</p>
 
-  <p><strong>Da sua conta no app:</strong> a data em que o teste grátis começou.</p>
+  <p><strong>Da sua conta no app:</strong></p>
+  <ul>
+    <li>A <strong>data em que o teste grátis começou</strong>. Ela também fica guardada
+    junto com um <strong>código feito a partir do seu e-mail</strong> (um resumo
+    criptográfico, do qual não dá para tirar o e-mail de volta), para que excluir a conta e
+    entrar de novo com o mesmo e-mail não comece outro teste grátis. Esse registro fica
+    mesmo depois de excluir a conta (veja "Como excluir a conta").</li>
+    <li>Quantas buscas do "Para onde?" você fez no mês (veja abaixo).</li>
+    <li>O <strong>código de divulgador</strong>, se você entrar com o código de alguém
+    que indicou o app, e a data em que entrou com ele. Se depois você assinar, o app
+    guarda na sua conta o <strong>registro da compra</strong> que a Google Play devolve
+    (o código da compra, o plano e o número do pedido), para o nosso servidor conferir a
+    compra com a própria Google Play e pagar a comissão de quem indicou. O divulgador não
+    vê o seu nome, o seu e-mail nem os seus gastos: só fica sabendo que alguém assinou
+    com o código dele.</li>
+  </ul>
 
   <p>O app não lê SMS, e-mails nem extratos, e não lê o conteúdo de outros aplicativos,
   com duas exceções, cada uma só se você ligar: as notificações de compra do banco
@@ -246,7 +266,8 @@
   lugar escolhido. O Google devolve as sugestões de endereço, os km, os minutos e o
   desenho da rota. O app <strong>não guarda</strong> o destino, a sua localização nem a
   rota: na sua conta fica só <strong>quantas buscas</strong> você fez no mês, por causa
-  do limite de 30 por mês. O uso que o Google faz desses dados segue os
+  do limite de 30 por mês. Essa contagem não é apagada pelo "Apagar todos os dados", para o
+  limite não recomeçar no meio do mês. O uso que o Google faz desses dados segue os
   <a href="https://cloud.google.com/maps-platform/terms">termos do Google Maps
   Platform</a> e a política de privacidade do Google.</p>
 
@@ -322,7 +343,8 @@
   <p>O app pode gerar arquivos a partir dos seus dados, sempre que você pedir:</p>
   <ul>
     <li>no modo motorista, um <strong>relatório de renda em PDF</strong> do mês ou dos
-    últimos 3 meses, com o seu nome e e-mail da conta Google;</li>
+    últimos 3 meses, com o seu nome e e-mail da conta Google, e as planilhas do período,
+    do ano e o <strong>resumo do ano para o contador</strong>;</li>
     <li>na busca, uma <strong>planilha</strong> com os lançamentos que a busca achou;</li>
     <li>nos investimentos, a <strong>planilha do imposto de renda</strong> do ano, com as
     operações, os proventos e a posição em 31/12.</li>
@@ -398,7 +420,9 @@
   de uso, rastreamento ou relatórios de falha</strong>.</p>
 
   <h2>Permissões</h2>
-  <p>O app <strong>não acessa</strong> contatos, fotos, SMS ou arquivos. Ele só pede o
+  <p>O app <strong>não acessa</strong> contatos, SMS ou arquivos, e não lê a sua galeria:
+  para a foto do comprovante, quem mostra as fotos é o seletor do Android, e o app recebe
+  só a foto que você escolher. Ele só pede o
   que as funções opcionais precisam, e só quando você as usa:</p>
 
   <ul>
@@ -412,9 +436,10 @@
     a oferta de corrida dos apps de motorista e mostrar o cartão e o botão flutuante. É
     ligado por você nas configurações de acessibilidade do Android e pode ser desligado
     ali a qualquer momento.</li>
-    <li><code>CAMERA</code> e <code>RECORD_AUDIO</code> (câmera e microfone): só para a
-    câmera da viagem, enquanto ela grava. O microfone só é pedido se você deixar o som
-    ligado.</li>
+    <li><code>CAMERA</code> e <code>RECORD_AUDIO</code> (câmera e microfone): para a
+    câmera da viagem, enquanto ela grava, e para tirar a foto do comprovante, quando você
+    toca em "Tirar foto". O microfone só é pedido se você deixar o som ligado na câmera da
+    viagem.</li>
     <li><code>FOREGROUND_SERVICE_CAMERA</code> e
     <code>FOREGROUND_SERVICE_MICROPHONE</code>: para a câmera da viagem continuar
     gravando com o app de corrida na frente, sempre com a notificação fixa na tela.</li>
@@ -447,7 +472,8 @@
   investimentos) sai do servidor na hora. O que fica só no celular tem prazo próprio:
   o histórico de ofertas do "Vale a pena?" é apagado depois de 90 dias, e os vídeos da
   câmera da viagem, depois dos dias que você escolher (menos os que você marcar para
-  guardar). Desligar o modo motorista ou os
+  guardar); a foto do comprovante, até você apagar o gasto ou tirar a foto. Desligar o
+  modo motorista ou os
   investimentos só esconde o botão: os dados continuam guardados até você apagá-los ou
   excluir a conta. Se você simplesmente parar de usar o app, os dados continuam
   guardados até você excluir a conta.</p>
@@ -455,10 +481,16 @@
   <h2>Como excluir a conta e os dados</h2>
   <p>No app: <strong>Minha conta → Excluir minha conta</strong>. Isso apaga na hora
   todos os gastos e receitas, cartões, gastos e receitas fixos, categorias criadas,
-  limites, metas, os dados do modo motorista, os investimentos e o registro da conta, e
-  também o histórico de ofertas guardado no celular. Não dá para desfazer. Os vídeos da
-  câmera da viagem e a cópia das mensagens prontas que fica no celular continuam nele até
-  você apagá-los no app ou desinstalá-lo.</p>
+  limites, metas, os dados do modo motorista, os investimentos, o código de divulgador,
+  os registros de compra e o registro da conta, e também o histórico de ofertas e as fotos
+  dos comprovantes guardados no celular. Não dá para desfazer. Os vídeos da câmera da
+  viagem e a cópia das mensagens prontas que fica no celular continuam nele até você
+  apagá-los no app ou desinstalá-lo.</p>
+
+  <p>Continuam guardados, para o teste grátis e o limite de buscas não recomeçarem: o
+  <strong>código feito a partir do e-mail</strong> com a data em que o teste começou, e a
+  <strong>contagem de buscas do "Para onde?"</strong> do mês. Nenhum dos dois tem
+  gastos, valores ou o seu e-mail em texto.</p>
 
   <p>Sem o app, peça por e-mail. O passo a passo e o que é apagado estão em
   <a href="https://edgareverton.github.io/controle-de-gastos/excluir-conta/">Excluir
@@ -468,7 +500,8 @@
   Store.</p>
 
   <p>Desinstalar o app apaga a cópia do celular (incluindo o histórico de ofertas, os
-  prints, os vídeos da câmera que não foram salvos na galeria e as mensagens prontas),
+  prints, os vídeos da câmera que não foram salvos na galeria, as fotos dos comprovantes e
+  as mensagens prontas),
   mas <strong>não apaga a conta nem os
   dados da nuvem</strong>.</p>
 
