@@ -100,7 +100,7 @@
 <main>
 
   <h1>Política de Privacidade — Controle de Gastos</h1>
-  <p class="data">Última atualização: 16 de novembro de 2026</p>
+  <p class="data">Última atualização: 19 de novembro de 2026</p>
 
   <h2>Resumo</h2>
   <div class="resumo">
@@ -378,6 +378,15 @@
   <p>As regras do banco só deixam cada conta ler e alterar os próprios dados. Nenhum
   outro usuário do app consegue ver os seus gastos.</p>
 
+  <p>Para proteger a nuvem contra cópias modificadas do app, ele usa o
+  <strong>Firebase App Check</strong> com a <strong>Play Integrity</strong> do Google:
+  cada pedido ao banco vai com um atestado do Google Play de que veio do app original,
+  instalado pela Play Store, num aparelho que passou na verificação do Google. Esse
+  atestado não leva os seus gastos; serve só para o banco recusar apps adulterados. O
+  que o Google faz nessa verificação segue a
+  <a href="https://policies.google.com/privacy?hl=pt-BR">política de privacidade do
+  Google</a>.</p>
+
   <p>O app também mantém uma <strong>cópia no seu celular</strong>, dentro da pasta
   privada dele, para funcionar sem internet. Quando a conexão volta, as mudanças feitas
   sem rede são enviadas. Essa cópia não entra no backup do Google nem na transferência
@@ -386,7 +395,8 @@
 
   <h2>Quem mais tem acesso</h2>
   <ul>
-    <li><strong>O Google</strong>, como fornecedor do Firebase e do login, processa os
+    <li><strong>O Google</strong>, como fornecedor do Firebase, do login e da verificação
+    do Play Integrity, processa os
     dados em nome do app para guardá-los e entregá-los a você. O uso que o Google faz
     deles segue os termos do Firebase e a
     <a href="https://policies.google.com/privacy?hl=pt-BR">política de privacidade do
