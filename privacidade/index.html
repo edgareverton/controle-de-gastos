@@ -100,12 +100,12 @@
 <main>
 
   <h1>Política de Privacidade — Fatura Motorista</h1>
-  <p class="data">Última atualização: 22 de novembro de 2026</p>
+  <p class="data">Última atualização: 23 de novembro de 2026</p>
 
   <h2>Resumo</h2>
   <div class="resumo">
-    <p>O Fatura Motorista guarda <strong>o que você anota nele</strong> (gastos,
-    receitas, metas de economia e, se você ligar, o modo motorista e os investimentos)
+    <p>O Fatura Motorista guarda <strong>o que você anota nele</strong> (o modo motorista,
+    os gastos, receitas e metas de economia e, se você ligar, os investimentos)
     numa conta ligada ao seu <strong>login do Google</strong>. É isso que permite trocar
     de celular e continuar vendo tudo.</p>
 
@@ -163,7 +163,7 @@
     valor).</li>
   </ul>
 
-  <p><strong>Do modo motorista</strong> (só se você ligar em Minha conta): uma área
+  <p><strong>Do modo motorista</strong> (já vem ligado; dá para desligar em Minha conta): uma área
   separada para quem roda de Uber, 99 ou outro app de corrida. Guarda o que você lança
   ou anota nela:</p>
   <ul>
@@ -180,6 +180,10 @@
     <li><strong>Carros e custos fixos do carro:</strong> o nome de cada carro e os
     custos que se repetem (seguro, parcela, aluguel, IPVA…), com valor, frequência e dia
     do vencimento.</li>
+    <li><strong>Eventos da cidade:</strong> os eventos que você cadastra (show, jogo,
+    feira) — o nome, o local que você escrever, o dia, o horário de começo e de fim, se
+    repete toda semana e quanto tempo antes de cada um você quer ser avisado. O "Valeu a
+    pena?" do dia seguinte é calculado no celular com os ganhos que você já lançou.</li>
     <li><strong>Cálculos do "Quanto custa rodar?":</strong> as respostas que você dá
     para calcular o custo do carro — se ele é financiado, alugado ou quitado, o nome, o
     valor de mercado, a parcela ou o aluguel, o seguro, o IPVA e a perda de valor em
@@ -442,7 +446,7 @@
     <li><code>ACCESS_FINE_LOCATION</code> e <code>ACCESS_COARSE_LOCATION</code>
     (localização): para o taxímetro e o "Para onde?" do modo motorista, só com a tela
     deles aberta.</li>
-    <li><code>POST_NOTIFICATIONS</code>: para o lembrete de vencimento e para a notificação "Gravando a viagem" da câmera.</li>
+    <li><code>POST_NOTIFICATIONS</code>: para o lembrete de vencimento, os avisos dos eventos cadastrados no modo motorista e a notificação "Gravando a viagem" da câmera.</li>
     <li><strong>Serviço de acessibilidade</strong>: para o "Vale a pena?" automático ler
     a oferta de corrida dos apps de motorista e mostrar o cartão e o botão flutuante. É
     ligado por você nas configurações de acessibilidade do Android e pode ser desligado
@@ -468,8 +472,8 @@
     <li><code>com.android.vending.BILLING</code>: o direito de oferecer a compra dentro
     do app.</li>
     <li><code>RECEIVE_BOOT_COMPLETED</code> e <code>WAKE_LOCK</code>: para o lembrete
-    de vencimento e o widget continuarem funcionando depois que o celular é
-    reiniciado.</li>
+    de vencimento, os avisos dos eventos e o widget continuarem funcionando depois que o
+    celular é reiniciado.</li>
     <li><code>READ_GSERVICES</code>: incluída pelas bibliotecas do Google, para ler
     configurações dos serviços do Google no aparelho.</li>
     <li><code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>: criada pelo próprio app
